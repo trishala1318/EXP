@@ -1,0 +1,7 @@
+speed = float(input("Enter vehicle speed (in km/h): "))
+SPEED_LIMIT = 60
+if speed > SPEED_LIMIT:
+    print("Overspeeding detected!")
+    print("Fine: ₹1000")
+else:
+    print("You are within the speed limit. Drive safely!")
