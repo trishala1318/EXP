@@ -1,0 +1,20 @@
+inventory = {
+    "apple": 50,
+    "banana": 30,
+    "milk": 20
+}
+print("Current Inventory:")
+for item, qty in inventory.items():
+    print(item, ":", qty)
+item_name = input("\nEnter item name to add/update: ")
+quantity = int(input("Enter quantity to add: "))
+if item_name in inventory:
+    inventory[item_name] += quantity
+    print("Stock updated successfully!")
+else:
+    inventory[item_name] = quantity
+    print("New item added to inventory!")
+print("\nUpdated Inventory:")
+for item, qty in inventory.items():
+    print(item, ":", qty)
+
