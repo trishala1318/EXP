@@ -1,0 +1,19 @@
+books = {}
+n = int(input("Enter number of books: "))
+for i in range(n):
+    name = input(f"Enter name of book {i+1}: ")
+    price = float(input(f"Enter price of '{name}': ₹"))
+    books[name] = price
+print("\nBook List:")
+for name, price in books.items():
+    print(name, ":", price)
+update_book = input("\nEnter book name to update price: ")
+if update_book in books:
+    new_price = float(input("Enter new price: ₹"))
+    books[update_book] = new_price
+    print("Price updated successfully!")
+else:
+    print("Book not found!")
+print("\nUpdated Book List:")
+for name, price in books.items():
+    print(name, ":", price)
