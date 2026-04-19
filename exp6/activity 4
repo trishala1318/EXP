@@ -1,0 +1,7 @@
+data = input("Enter data: ")
+
+backup = data
+
+print("Data copied successfully!")
+print("Backup Data:")
+print(backup)
