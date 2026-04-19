@@ -1,0 +1,11 @@
+complaints = []
+
+n = int(input("Enter number of complaints to add: "))
+
+for i in range(n):
+    complaint = input("Enter complaint: ")
+    complaints.append(complaint)
+
+print("\nAll Complaints:")
+for c in complaints:
+    print(c)
