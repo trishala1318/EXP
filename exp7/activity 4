@@ -1,0 +1,21 @@
+class Order:
+    def __init__(self):
+        self.total = 0
+
+    def add_item(self, price, quantity):
+        self.total += price * quantity
+
+    def show_total(self):
+        print("Total Order Cost:", self.total)
+
+
+order = Order()
+
+n = int(input("Enter number of items: "))
+
+for i in range(n):
+    price = float(input("Enter price of item: "))
+    quantity = int(input("Enter quantity: "))
+    order.add_item(price, quantity)
+
+order.show_total()
