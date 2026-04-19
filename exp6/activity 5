@@ -1,0 +1,7 @@
+with open("report.txt", "r") as file:
+    data = file.read()
+
+words = data.split()
+count = len(words)
+
+print("Number of words:", count)
