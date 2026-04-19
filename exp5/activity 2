@@ -1,0 +1,16 @@
+class1 = {}
+class2 = {}
+print("Enter details for Class 1:")
+for i in range(5):
+    roll = input(f"Enter roll number of student {i+1}: ")
+    name = input(f"Enter name of student {i+1}: ")
+    class1[roll] = name
+print("\nEnter details for Class 2:")
+for i in range(5):
+    roll = input(f"Enter roll number of student {i+1}: ")
+    name = input(f"Enter name of student {i+1}: ")
+    class2[roll] = name
+common_rolls = set(class1.keys()) & set(class2.keys())
+print("\nStudents present in BOTH classes:")
+for roll in common_rolls:
+    print("Roll No:", roll, "| Name:", class1[roll])
