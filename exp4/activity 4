@@ -1,0 +1,4 @@
+review = input("Enter the review: ").lower()
+word = input("Enter the word to count: ").lower()
+count = review.split().count(word)
+print(f"The word '{word}' appears {count} times in the review.")
