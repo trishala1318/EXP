@@ -1,0 +1,19 @@
+from datetime import datetime
+
+def hospital_appointment():
+    print("=== Hospital Appointment System ===")
+
+    today = datetime.today()
+    formatted_date = today.strftime("%d-%m-%Y")
+
+    print(f"Today's Date: {formatted_date}")
+
+    name = input("Enter patient name: ")
+    doctor = input("Enter doctor name: ")
+
+    print("\nAppointment Confirmed")
+    print(f"Patient Name: {name}")
+    print(f"Doctor: {doctor}")
+    print(f"Date: {formatted_date}")
+
+hospital_appointment()
