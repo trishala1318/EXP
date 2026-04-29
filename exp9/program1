@@ -1,0 +1,38 @@
+def split_bill():
+    print("=== Bill Splitter ===")
+
+    try:
+        total_bill = float(input("Enter total bill amount: ₹"))
+        people = int(input("Enter number of people: "))
+
+        if people <= 0:
+            print("Number of people must be greater than zero.")
+        else:
+            share = total_bill / people
+            print(f"Each person should pay: ₹{share:.2f}")
+
+    except ValueError:
+        print("Invalid input! Please enter valid numbers.")
+    except ZeroDivisionError:
+        print("Cannot divide by zero.")
+
+split_bill()
+def split_bill():
+    print("=== Bill Splitter ===")
+
+    try:
+        total_bill = float(input("Enter total bill amount: ₹"))
+        people = int(input("Enter number of people: "))
+
+        if people <= 0:
+            print("Number of people must be greater than zero.")
+        else:
+            share = total_bill / people
+            print(f"Each person should pay: ₹{share:.2f}")
+
+    except ValueError:
+        print("Invalid input! Please enter valid numbers.")
+    except ZeroDivisionError:
+        print("Cannot divide by zero.")
+
+split_bill()
