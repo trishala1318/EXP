@@ -1,0 +1,5 @@
+import datetime
+now = datetime.datetime.now()
+print("Current Date:", now.strftime(“%Y-%m-%d")
+print("Current Time:", now.strtime(“%H:%M:%S")
+print("Weekday:", now.strftime("%A"))
