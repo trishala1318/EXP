@@ -1,0 +1,39 @@
+def atm():
+    balance = 10000
+
+    print("=== Welcome to ATM ===")
+
+    while True:
+        print("\n1. Check Balance")
+        print("2. Withdraw Money")
+        print("3. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == "1":
+            print(f"Your current balance is: ₹{balance}")
+
+        elif choice == "2":
+            try:
+                amount = float(input("Enter amount to withdraw: ₹"))
+
+                if amount <= 0:
+                    print("Enter a valid amount.")
+                elif amount > balance:
+                    print("Insufficient balance!")
+                else:
+                    balance -= amount
+                    print("Withdrawal successful!")
+                    print(f"Remaining balance: ₹{balance}")
+
+            except ValueError:
+                print("Invalid input! Please enter numbers only.")
+
+        elif choice == "3":
+            print("Thank you for using ATM!")
+            break
+
+        else:
+            print("Invalid choice. Try again.")
+
+atm()
